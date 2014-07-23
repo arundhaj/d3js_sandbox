@@ -13,6 +13,7 @@ var tooltip = d3.select("body").append("div")
         .attr("class", "tooltip")
         .style("opacity", 0);
 
+
 var color = d3.scale.ordinal()
               .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
 
@@ -32,7 +33,7 @@ var svg = d3.select("#pie_chart").append("svg")
           .append("g")
             .attr("transform", "translate(" + width/2 + "," + height/2 + ")");
 
-var g = svg.selectAll("arc")
+var g = svg.selectAll(".arc")
             .data(pie(pie_data))
           .enter().append("g")
             .attr("class", "arc")
