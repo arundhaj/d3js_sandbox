@@ -1,0 +1,66 @@
+svg {
+  display: block;
+  margin: auto;
+  border: 1px solid lightgrey;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 7px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.head-text {
+  text-anchor: middle;
+  font: 14px sans-serif;
+  font-weight: bold;
+}
+
+.over-text {
+  font: 12px sans-serif;
+}
+
+text {
+  font: 12px sans-serif;
+}
+
+.axis {
+   font: 10px sans-serif;
+}
+
+.bg-bar {
+  fill: #E5E4E2;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.y.axis text{
+  display: none;
+}
+
+.label {
+  font-size: 12px;
+}
+
+.x1.axis .tick {
+  display: none;
+}
+
+circle {
+  opacity: 0.8;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+circle:hover {
+  opacity: 1;
+}
